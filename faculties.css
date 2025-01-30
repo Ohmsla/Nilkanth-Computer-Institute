@@ -1,0 +1,59 @@
+.docm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: fixed;
+}
+.nn-{
+    display: block;
+    width: 31.9%;
+    height: auto;
+}
+.content{
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+.zz{
+    margin: 0px;
+}
+
+
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: #666666;
+}
+
+table th {
+    background-color: #FCF8E3;
+    font-weight: bold;
+    color: #333333;
+}
+
+table tr:nth-child(even) {
+    background-color: #D3EDE9;
+}
+table tr:nth-child(odd) {
+    background-color: #D3EDE9;
+}
+table td:hover{
+    color: #333333;
+}
+table tr:hover {
+    background-color: #C4E3F3;
+}

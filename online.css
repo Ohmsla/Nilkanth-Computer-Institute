@@ -1,0 +1,68 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    background-color: #d3d3d3; /* Light-gray background */
+    /* padding: 20px; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.crokk, .crokk2 {
+    flex: 1 1 calc(25% - 25%); /* Adjust size to ensure spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    height: 130px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crokk:hover, .crokk2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.infos a {
+    text-decoration: none;
+}
+
+
+.llk h3 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#crokk1 {
+    background-color: #D81265;
+}
+
+#crokk2 {
+    background-color: #3ad88e;
+}
+
+.llk:nth-child(3) {
+    background-color: #e5ae40;
+}
+
+.llk:nth-child(4) {
+    background-color: #57a2f2;
+}
+
+@media (max-width: 768px) {
+    .crokk, .crokk2 {
+        flex: 1 1 100%;
+    }
+}

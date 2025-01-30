@@ -1,0 +1,152 @@
+.allpic {
+    display: inline-flex;
+    align-items: flex-start;
+    margin: 50px 0 0 50px;
+    height: 130vh;
+}
+.allpic a{
+    color: #666666;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+.allpic #nocol {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin-left: 15px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+.allpic #nocol:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);   
+}
+#nocol:active{
+    border: 1px solid #d81265;
+}
+#nocol:focus{
+    border: 1px solid #d81265;
+}
+.dropdown-menu {
+    display: list-item;
+    /* display: none; */
+    position: absolute;
+    top: 350px;
+    box-sizing: border-box;
+    left: 50px;
+    width: 90%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu .ee1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.dropdown-menu .e1 {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown-menu .e1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Modal background */
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    transform: scale(1); /* Reset zoom */
+    transition: transform 0.3s ease;
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.control-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.zoom-controls {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.zoom-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.zoom-button:hover {
+    background-color: #0056b3;
+}
